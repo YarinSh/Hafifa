@@ -6,7 +6,7 @@
  ****************************/
 
 class Weapon {
-    static attackSound = "Hit";
+    static attackSound = 'Hit';
 
     constructor(type, damage) {
         this.type = type;
@@ -19,23 +19,23 @@ class Weapon {
 }
 
 class Wand extends Weapon {
-    static attackSound = "Fshhhh";
+    static attackSound = 'Fshhhh';
 }
 
 class Sword extends Weapon {
-    static attackSound = "Swinggg";
+    static attackSound = 'Swinggg';
 }
 
 class Axe extends Weapon {
-    static attackSound = "Achtshhhh";
+    static attackSound = 'Achtshhhh';
 }
 
 class Hammer extends Weapon {
-    static attackSound = "Boomm";
+    static attackSound = 'Boomm';
 }
 
 class BowAndArrow extends Weapon {
-    static attackSound = "Shboinggg";
+    static attackSound = 'Shboinggg';
 }
 
 class Player {
@@ -54,7 +54,7 @@ class Player {
                 return;
             }
         }
-        throw new Error("Invalid weapon type!");
+        throw new Error('Invalid weapon type!');
     }
 
     attack(){
