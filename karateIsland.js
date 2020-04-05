@@ -50,7 +50,6 @@ class Player {
 
     checkWeapon(weapon) {
         for (let weaponType of this.constructor.validWeaponTypes) {
-            console.log(weaponType);
             if(weapon instanceof weaponType) {
                 return;
             }
