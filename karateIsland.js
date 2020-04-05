@@ -6,7 +6,7 @@
  ****************************/
 
 class Weapon {
-    attackSound = "Hit";
+    static attackSound = "Hit";
 
     constructor(type, damage) {
         this.type = type;
@@ -14,28 +14,28 @@ class Weapon {
     }
 
     attack() {
-        return this.attackSound;
+        return this.constructor.attackSound;
     }
 }
 
 class Wand extends Weapon {
-    attackSound = "Fshhhh";
+    static attackSound = "Fshhhh";
 }
 
 class Sword extends Weapon {
-    attackSound = "Swinggg";
+    static attackSound = "Swinggg";
 }
 
 class Axe extends Weapon {
-    attackSound = "Achtshhhh";
+    static attackSound = "Achtshhhh";
 }
 
 class Hammer extends Weapon {
-    attackSound = "Boomm";
+    static attackSound = "Boomm";
 }
 
 class BowAndArrow extends Weapon {
-    attackSound = "Shboinggg";
+    static attackSound = "Shboinggg";
 }
 
 class Player {
