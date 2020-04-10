@@ -1,0 +1,8 @@
+{
+  "name": "hafifa",
+  "version": "1.0.0",
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "prompt": "^1.0.0"
+  }
+}
