@@ -1,0 +1,66 @@
+{
+  "entries": [
+    {
+      "name": "Yarin",
+      "text": "My day is fine, how are you?",
+      "date": "Fri Apr 10 2020 16:15:26 GMT+0300 (Israel Daylight Time)",
+      "os": "Windows_NT",
+      "processorCores": 12,
+      "pathsInC": [
+        "$Recycle.Bin",
+        "$SysReset",
+        "bootTel.dat",
+        "cygwin64",
+        "devlist.txt",
+        "Documents and Settings",
+        "eSupport",
+        "Finish.log",
+        "hiberfil.sys",
+        "Intel",
+        "KRECYCLE",
+        "pagefile.sys",
+        "pefdata.dat",
+        "PerfLogs",
+        "Program Files",
+        "Program Files (x86)",
+        "ProgramData",
+        "Recovery",
+        "swapfile.sys",
+        "System Volume Information",
+        "Users",
+        "Windows"
+      ]
+    },
+    {
+      "name": "John",
+      "text": "Lenon",
+      "date": "Mon Apr 20 2020 11:31:40 GMT+0300 (Israel Daylight Time)",
+      "os": "Windows_NT",
+      "processorCores": 12,
+      "pathsInC": [
+        "$Recycle.Bin",
+        "$SysReset",
+        "bootTel.dat",
+        "cygwin64",
+        "devlist.txt",
+        "Documents and Settings",
+        "eSupport",
+        "Finish.log",
+        "hiberfil.sys",
+        "Intel",
+        "KRECYCLE",
+        "pagefile.sys",
+        "pefdata.dat",
+        "PerfLogs",
+        "Program Files",
+        "Program Files (x86)",
+        "ProgramData",
+        "Recovery",
+        "swapfile.sys",
+        "System Volume Information",
+        "Users",
+        "Windows"
+      ]
+    }
+  ]
+}
