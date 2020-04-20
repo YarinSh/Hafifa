@@ -1,5 +1,5 @@
 /****************************
- * Filename: showMyDay.js
+ * Filename: bigDataYourDay.js
  * Purpose: Learning Javascript
  * Author: YS
  * Date: 10.4.2020
@@ -12,6 +12,8 @@ const readline = require('readline').createInterface({
     output: process.stdout
 });
 
+const os = require('os');
+
 fs.readFile('diary.json', (err, data) => {
     let diary;
     if (err) {
@@ -23,14 +25,21 @@ fs.readFile('diary.json', (err, data) => {
 
     readline.question('What is your name?', function (name) {
         readline.question('How was your day?', function (text) {
-            let entry = {
-                name: name,
-                text: text
-            };
-            diary.entries.push(entry);
-            fs.writeFile('diary.json', JSON.stringify(diary, null, 2), err => {
+            fs.readdir('C:\\', function (err, paths) {
                 if (err) throw err;
-                readline.close();
+                let entry = {
+                    name: name,
+                    text: text,
+                    date: new Date().toString(),
+                    os: os.type(),
+                    processorCores: os.cpus().length,
+                    pathsInC: paths
+                };
+                diary.entries.push(entry);
+                fs.writeFile('diary.json', JSON.stringify(diary, null, 2), err => {
+                    if (err) throw err;
+                    readline.close();
+                });
             });
         });
     });
