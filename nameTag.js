@@ -11,5 +11,5 @@ class Tag {
     }
 }
 
-let tag = new Tag();
+const tag = new Tag();
 console.log(tag.getClassName());
