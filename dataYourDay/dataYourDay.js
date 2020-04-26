@@ -34,19 +34,29 @@ function getDiary(err, data) {
     }
 }
 
+//Handles the error
+function handleError(err, readline){
+    if(err) {
+        readline.close();
+        throw err;
+    }
+}
+
+//Writes the diary to the JSON file
+function writeDiaryToFile(diary) {
+    fs.writeFile(DIARY_FILE, JSON.stringify(diary, null, 2), err => {
+        handleError(err, readline);
+        readline.close();
+    });
+}
+
 
 fs.readFile(DIARY_FILE, (err, data) => {
     let diary = getDiary(err, data);
     readline.question(messages.NAME_REQUEST, function (name) {
         readline.question(messages.DAY_DESCRIPTION_REQUEST, function (text) {
             diary.push({name: name, text: text});
-            fs.writeFile(DIARY_FILE, JSON.stringify(diary, null, 2), err => {
-                if (err) {
-                    readline.close();
-                    throw err;
-                }
-                readline.close();
-            });
+            writeDiaryToFile(diary);
         });
     });
 });
