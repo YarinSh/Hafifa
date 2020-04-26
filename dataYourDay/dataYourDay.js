@@ -20,26 +20,26 @@ const readline = require('readline').createInterface({
     output: process.stdout
 });
 
-fs.readFile(DIARY_FILE, (err, data) => {
-    let diary;
+//Parses the diary or if no diary creates it
+function getDiary(err, data) {
     if (err) {
         // if the file does not exist, we will initialize a new diary
         if (err.code === NO_SUCH_FILE) {
-            diary = [];
+            return [];
         } else {
             throw err;
         }
     } else {
-        diary = JSON.parse(data.toString());
+        return JSON.parse(data.toString());
     }
+}
 
+
+fs.readFile(DIARY_FILE, (err, data) => {
+    let diary = getDiary(err, data);
     readline.question(messages.NAME_REQUEST, function (name) {
         readline.question(messages.DAY_DESCRIPTION_REQUEST, function (text) {
-            const entry = {
-                name: name,
-                text: text
-            };
-            diary.push(entry);
+            diary.push({name: name, text: text});
             fs.writeFile(DIARY_FILE, JSON.stringify(diary, null, 2), err => {
                 if (err) {
                     readline.close();
