@@ -1,6 +1,6 @@
 function sum(x) {
     return function (y) {
-        return x+y;
+        return x + y;
     };
 }
 
@@ -8,7 +8,7 @@ function sum(x) {
 * And 3 needs to be first, so it needs to has the lowest timeout, dividing
 * will get us this desired result. */
 function count3To1() {
-    for(let i=0; i <= 3; i++){
+    for(let i = 0; i <= 3; i++) {
         setTimeout(() => console.log(i), 1000 / (i + 1));
     }
 }
