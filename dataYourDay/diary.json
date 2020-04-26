@@ -1,12 +1,10 @@
-{
-  "entries": [
-    {
-      "name": "Yarin",
-      "text": "It is quite a rainy day, but overall im quite fine"
-    },
-    {
-      "name": "Anon",
-      "text": "This day sucks!"
-    }
-  ]
-}
+[
+  {
+    "name": "Jack",
+    "text": "It was excellent"
+  },
+  {
+    "name": "Don",
+    "text": "It was OK"
+  }
+]
