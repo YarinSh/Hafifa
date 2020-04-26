@@ -1,35 +1,64 @@
-{
-  "entries": [
-    {
-      "name": "Yarin",
-      "text": "My day is fine, how are you?",
-      "date": "Fri Apr 10 2020 16:15:26 GMT+0300 (Israel Daylight Time)",
-      "os": "Windows_NT",
-      "processorCores": 12,
-      "pathsInC": [
-        "$Recycle.Bin",
-        "$SysReset",
-        "bootTel.dat",
-        "cygwin64",
-        "devlist.txt",
-        "Documents and Settings",
-        "eSupport",
-        "Finish.log",
-        "hiberfil.sys",
-        "Intel",
-        "KRECYCLE",
-        "pagefile.sys",
-        "pefdata.dat",
-        "PerfLogs",
-        "Program Files",
-        "Program Files (x86)",
-        "ProgramData",
-        "Recovery",
-        "swapfile.sys",
-        "System Volume Information",
-        "Users",
-        "Windows"
-      ]
-    }
-  ]
-}
+[
+  {
+    "name": "Yarin",
+    "text": "It was OK",
+    "date": "Sun Apr 26 2020 22:57:20 GMT+0300 (Israel Daylight Time)",
+    "os": "Windows_NT",
+    "processorCores": 12,
+    "pathsInC": [
+      "$Recycle.Bin",
+      "$SysReset",
+      "bootTel.dat",
+      "cygwin64",
+      "devlist.txt",
+      "Documents and Settings",
+      "eSupport",
+      "Finish.log",
+      "hiberfil.sys",
+      "Intel",
+      "KRECYCLE",
+      "pagefile.sys",
+      "pefdata.dat",
+      "PerfLogs",
+      "Program Files",
+      "Program Files (x86)",
+      "ProgramData",
+      "Recovery",
+      "swapfile.sys",
+      "System Volume Information",
+      "Users",
+      "Windows"
+    ]
+  },
+  {
+    "name": "Tera",
+    "text": "It was bad",
+    "date": "Sun Apr 26 2020 22:57:34 GMT+0300 (Israel Daylight Time)",
+    "os": "Windows_NT",
+    "processorCores": 12,
+    "pathsInC": [
+      "$Recycle.Bin",
+      "$SysReset",
+      "bootTel.dat",
+      "cygwin64",
+      "devlist.txt",
+      "Documents and Settings",
+      "eSupport",
+      "Finish.log",
+      "hiberfil.sys",
+      "Intel",
+      "KRECYCLE",
+      "pagefile.sys",
+      "pefdata.dat",
+      "PerfLogs",
+      "Program Files",
+      "Program Files (x86)",
+      "ProgramData",
+      "Recovery",
+      "swapfile.sys",
+      "System Volume Information",
+      "Users",
+      "Windows"
+    ]
+  }
+]
