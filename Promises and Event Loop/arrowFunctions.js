@@ -27,10 +27,22 @@ async function printFibNums(maxNumber) {
     }
 }
 
+function printFibNums(maxNumber) {
+    const fibGenerator = getFibGenerator(maxNumber);
+    const interval = setInterval(() => {
+        const nextValue = fibGenerator.next();
+        if(!nextValue.done){
+            console.log(nextValue.value);
+        } else {
+            clearInterval(interval);
+        }
+    }, 100);
+}
+
 function onlyEven(arrOfArrays) {
     return arrOfArrays.map(arr => arr.filter(elem => elem % 2 === 0));
 }
 
 //We will ignore the promise
-printFibNums(10000).then(null);
+printFibNums(10000);
 console.log(onlyEven([[1, 2, 3], [4, 6, 9]]));
